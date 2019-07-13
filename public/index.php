@@ -1,9 +1,5 @@
 <?php
 
-// echo "<pre>";
-// print_r(scandir(__DIR__ . '/../'));
-// echo "</pre>";
-// echo file_get_contents("../.env");
 /**
  * Laravel - A PHP Framework For Web Artisans
  *

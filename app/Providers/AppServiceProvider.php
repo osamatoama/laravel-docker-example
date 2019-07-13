@@ -25,11 +25,6 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         // temp only for docker
-        session()->put('migrate', 'yes');
-        if (!session()->has('migrate') || User::count() == 0) {
-            echo str_random();
-            \Artisan::call('migrate:fresh --seed');
-            return;
-        }
+        \Artisan::call('migrate:fresh --seed');
     }
 }
